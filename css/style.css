@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #6222CC;
-    --secondary: #FBA504;
-    --light: #F6F4F9;
-    --dark: #04000B;
+    --primary: #27ae60;
+    --secondary: #1abc9c;
+    --light: #ecf0f1;
+    --dark: #2c3e50;
 }
 
 
@@ -299,10 +299,35 @@ h6,
 /*** Feature ***/
 .feature-item {
     transition: .5s;
+    background: linear-gradient(135deg, #f0fff4 0%, #e8f8f5 100%);
+    border: 2px solid rgba(39, 174, 96, 0.1);
 }
 
 .feature-item:hover {
     margin-top: -15px;
+    background: linear-gradient(135deg, #e8f8f5 0%, var(--secondary) 100%);
+    border-color: var(--secondary);
+    box-shadow: 0 10px 30px rgba(26, 188, 156, 0.2);
+}
+
+
+/*** Product ***/
+.product-item {
+    transition: .5s;
+    border: 1px solid rgba(39, 174, 96, 0.15);
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(39, 174, 96, 0.2);
+}
+
+.product-item .btn-primary {
+    background-color: var(--primary);
+}
+
+.product-item .btn-primary:hover {
+    background-color: #1e8449;
 }
 
 
@@ -340,15 +365,17 @@ h6,
 .service-item {
     position: relative;
     padding: 45px 30px;
-    background: var(--light);
+    background: #f0fff4;
     overflow: hidden;
     transition: .5s;
+    border-left: 4px solid var(--primary);
 }
 
 .service-item:hover {
     margin-top: -15px;
     padding-bottom: 60px;
-    background: var(--primary);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    box-shadow: 0 10px 30px rgba(39, 174, 96, 0.3);
 }
 
 .service-item .service-icon {
@@ -435,7 +462,7 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(98, 34, 204, .9);
+    background: rgba(39, 174, 96, .9);
     transition: .5s;
     opacity: 0;
 }
