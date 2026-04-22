@@ -30,107 +30,167 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-        <!-- Structured Data (JSON-LD) -->
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@graph": [
+                <!-- Structured Data (JSON-LD) -->
+                <script type="application/ld+json">
                 {
-                    "@type": "Organization",
-                    "@id": "https://bioplasticsolutions.com/#organization",
-                    "name": "BioPlastic Solutions",
-                    "url": "https://bioplasticsolutions.com/",
-                    "logo": "https://bioplasticsolutions.com/img/logo.png",
-                    "contactPoint": [
+                    "@context": "https://schema.org",
+                    "@graph": [
                         {
-                            "@type": "ContactPoint",
+                            "@type": "Organization",
+                            "@id": "https://bioplasticsolutions.com/#organization",
+                            "name": "BioPlastic Solutions",
+                            "url": "https://bioplasticsolutions.com/",
+                            "logo": "https://bioplasticsolutions.com/img/logo.png",
+                            "contactPoint": [
+                                {
+                                    "@type": "ContactPoint",
+                                    "telephone": "+1 (800) BIO-PLASTIC",
+                                    "contactType": "customer service",
+                                    "email": "info@bioplasticsolutions.com"
+                                }
+                            ],
+                            "sameAs": [
+                                "https://twitter.com/",
+                                "https://www.facebook.com/",
+                                "https://www.instagram.com/",
+                                "https://www.linkedin.com/"
+                            ]
+                        },
+                        {
+                            "@type": "LocalBusiness",
+                            "@id": "https://bioplasticsolutions.com/#localbusiness",
+                            "name": "BioPlastic Solutions",
+                            "image": "https://bioplasticsolutions.com/img/portfolio-1.jpg",
+                            "address": {
+                                "@type": "PostalAddress",
+                                "streetAddress": "Eco Business Park",
+                                "addressLocality": "Green City",
+                                "addressCountry": "USA"
+                            },
                             "telephone": "+1 (800) BIO-PLASTIC",
-                            "contactType": "customer service",
-                            "email": "info@bioplasticsolutions.com"
+                            "email": "info@bioplasticsolutions.com",
+                            "url": "https://bioplasticsolutions.com/"
+                        },
+                        {
+                            "@type": "WebSite",
+                            "@id": "https://bioplasticsolutions.com/#website",
+                            "url": "https://bioplasticsolutions.com/",
+                            "name": "BioPlastic Solutions",
+                            "description": "Bio plastic plates, cups, and utensils for retail shops, hotels, and restaurants"
+                        },
+                        {
+                            "@type": "WebPage",
+                            "@id": "https://bioplasticsolutions.com/index.html#webpage",
+                            "url": "https://bioplasticsolutions.com/index.html",
+                            "name": "BioPlastic Solutions - Eco-Friendly Products",
+                            "description": "Eco-Friendly Bio Plastic Products for Retail, Hotels, and Restaurants",
+                            "isPartOf": { "@id": "https://bioplasticsolutions.com/#website" },
+                            "breadcrumb": {
+                                "@type": "BreadcrumbList",
+                                "itemListElement": [
+                                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bioplasticsolutions.com/index.html" }
+                                ]
+                            }
+                        },
+                        {
+                            "@type": "Product",
+                            "@id": "https://bioplasticsolutions.com/products/bio-plastic-plates#product",
+                            "name": "Bio Plastic Plates",
+                            "image": [ "https://bioplasticsolutions.com/img/portfolio-1.jpg" ],
+                            "description": "Durable and eco-friendly plates perfect for restaurants, hotels, and catering services. 100% biodegradable and compostable.",
+                            "sku": "PLATES-001",
+                            "mpn": "BP-PLATE-001",
+                            "brand": { "@type": "Brand", "name": "BioPlastic Solutions" },
+                            "offers": {
+                                "@type": "Offer",
+                                "url": "https://bioplasticsolutions.com/product/bio-plastic-plates",
+                                "priceCurrency": "USD",
+                                "price": "9.99",
+                                "priceValidUntil": "2026-12-31",
+                                "availability": "https://schema.org/InStock",
+                                "itemCondition": "https://schema.org/NewCondition"
+                            },
+                            "aggregateRating": {
+                                "@type": "AggregateRating",
+                                "ratingValue": "4.6",
+                                "reviewCount": "128"
+                            },
+                            "review": [
+                                {
+                                    "@type": "Review",
+                                    "author": { "@type": "Person", "name": "Sarah Johnson" },
+                                    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                                    "reviewBody": "Using BioPlastic's plates has transformed our restaurant's sustainability image. The quality is outstanding."
+                                }
+                            ]
+                        },
+                        {
+                            "@type": "Product",
+                            "@id": "https://bioplasticsolutions.com/products/bio-plastic-cups#product",
+                            "name": "Bio Plastic Cups",
+                            "image": [ "https://bioplasticsolutions.com/img/portfolio-2.jpg" ],
+                            "description": "Lightweight and sustainable cups ideal for beverages. Available in various sizes for different needs. Eco-conscious choice.",
+                            "sku": "CUPS-001",
+                            "mpn": "BP-CUP-001",
+                            "brand": { "@type": "Brand", "name": "BioPlastic Solutions" },
+                            "offers": {
+                                "@type": "Offer",
+                                "url": "https://bioplasticsolutions.com/product/bio-plastic-cups",
+                                "priceCurrency": "USD",
+                                "price": "6.50",
+                                "priceValidUntil": "2026-12-31",
+                                "availability": "https://schema.org/InStock",
+                                "itemCondition": "https://schema.org/NewCondition"
+                            },
+                            "aggregateRating": {
+                                "@type": "AggregateRating",
+                                "ratingValue": "4.5",
+                                "reviewCount": "94"
+                            },
+                            "review": [
+                                {
+                                    "@type": "Review",
+                                    "author": { "@type": "Person", "name": "Michael Chen" },
+                                    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                                    "reviewBody": "As a hotel, these cups were exactly what we needed - reliable and environmentally responsible."
+                                }
+                            ]
+                        },
+                        {
+                            "@type": "Product",
+                            "@id": "https://bioplasticsolutions.com/products/bio-plastic-utensils#product",
+                            "name": "Bio Plastic Utensils",
+                            "image": [ "https://bioplasticsolutions.com/img/portfolio-3.jpg" ],
+                            "description": "Sturdy forks, spoons, and knives made from bio plastic. Perfect for takeout and food service. Fully sustainable solution.",
+                            "sku": "UTENSILS-001",
+                            "mpn": "BP-UTEN-001",
+                            "brand": { "@type": "Brand", "name": "BioPlastic Solutions" },
+                            "offers": {
+                                "@type": "Offer",
+                                "url": "https://bioplasticsolutions.com/product/bio-plastic-utensils",
+                                "priceCurrency": "USD",
+                                "price": "4.99",
+                                "priceValidUntil": "2026-12-31",
+                                "availability": "https://schema.org/InStock",
+                                "itemCondition": "https://schema.org/NewCondition"
+                            },
+                            "aggregateRating": {
+                                "@type": "AggregateRating",
+                                "ratingValue": "4.7",
+                                "reviewCount": "76"
+                            },
+                            "review": [
+                                {
+                                    "@type": "Review",
+                                    "author": { "@type": "Person", "name": "Emma Williams" },
+                                    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+                                    "reviewBody": "Their bulk ordering system is seamless. We've ordered for months with no issues."
+                                }
+                            ]
                         }
-                    ],
-                    "sameAs": [
-                        "https://twitter.com/",
-                        "https://www.facebook.com/",
-                        "https://www.instagram.com/",
-                        "https://www.linkedin.com/"
                     ]
-                },
-                {
-                    "@type": "LocalBusiness",
-                    "@id": "https://bioplasticsolutions.com/#localbusiness",
-                    "name": "BioPlastic Solutions",
-                    "image": "https://bioplasticsolutions.com/img/portfolio-1.jpg",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "Eco Business Park",
-                        "addressLocality": "Green City",
-                        "addressCountry": "USA"
-                    },
-                    "telephone": "+1 (800) BIO-PLASTIC",
-                    "email": "info@bioplasticsolutions.com",
-                    "url": "https://bioplasticsolutions.com/"
-                },
-                {
-                    "@type": "WebSite",
-                    "@id": "https://bioplasticsolutions.com/#website",
-                    "url": "https://bioplasticsolutions.com/",
-                    "name": "BioPlastic Solutions",
-                    "description": "Bio plastic plates, cups, and utensils for retail shops, hotels, and restaurants"
-                },
-                {
-                    "@type": "WebPage",
-                    "@id": "https://bioplasticsolutions.com/index.html#webpage",
-                    "url": "https://bioplasticsolutions.com/index.html",
-                    "name": "BioPlastic Solutions - Eco-Friendly Products",
-                    "description": "Eco-Friendly Bio Plastic Products for Retail, Hotels, and Restaurants",
-                    "isPartOf": { "@id": "https://bioplasticsolutions.com/#website" },
-                    "breadcrumb": {
-                        "@type": "BreadcrumbList",
-                        "itemListElement": [
-                            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bioplasticsolutions.com/index.html"}
-                        ]
-                    }
-                },
-                {
-                    "@type": "Product",
-                    "name": "Bio Plastic Plates",
-                    "description": "Durable and eco-friendly plates perfect for restaurants, hotels, and catering services. 100% biodegradable and compostable.",
-                    "brand": { "@type": "Brand", "name": "BioPlastic Solutions" }
-                },
-                {
-                    "@type": "Product",
-                    "name": "Bio Plastic Cups",
-                    "description": "Lightweight and sustainable cups ideal for beverages. Available in various sizes for different needs. Eco-conscious choice.",
-                    "brand": { "@type": "Brand", "name": "BioPlastic Solutions" }
-                },
-                {
-                    "@type": "Product",
-                    "name": "Bio Plastic Utensils",
-                    "description": "Sturdy forks, spoons, and knives made from bio plastic. Perfect for takeout and food service. Fully sustainable solution.",
-                    "brand": { "@type": "Brand", "name": "BioPlastic Solutions" }
-                },
-                {
-                    "@type": "Review",
-                    "reviewBody": "Using BioPlastic's products has transformed our restaurant's sustainability image. Our customers love that we're eco-conscious, and the quality is outstanding.",
-                    "author": { "@type": "Person", "name": "Sarah Johnson" },
-                    "itemReviewed": { "@type": "Product", "name": "Bio Plastic Products" }
-                },
-                {
-                    "@type": "Review",
-                    "reviewBody": "As a hotel, we were looking for sustainable solutions. BioPlastic delivered exactly what we needed - reliable, affordable, and environmentally responsible.",
-                    "author": { "@type": "Person", "name": "Michael Chen" },
-                    "itemReviewed": { "@type": "Product", "name": "Bio Plastic Products" }
-                },
-                {
-                    "@type": "Review",
-                    "reviewBody": "Their bulk ordering system is seamless. We've been ordering for months and have never had an issue. Highly recommend for retail businesses.",
-                    "author": { "@type": "Person", "name": "Emma Williams" },
-                    "itemReviewed": { "@type": "Product", "name": "Bio Plastic Products" }
                 }
-            ]
-        }
-        </script>
+                </script>
 </head>
 
 <body>
