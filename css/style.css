@@ -210,8 +210,8 @@ h6,
 
 /*** Hero Header ***/
 .hero-header {
-    margin-bottom: 6rem;
-    padding: 18rem 0;
+    margin-bottom: 3rem;
+    padding: 8rem 0;
     background:
         url(../img/blob-top-left.png),
         url(../img/blob-top-right.png),
@@ -231,7 +231,7 @@ h6,
 
 @media (max-width: 991.98px) {
     .hero-header {
-        padding: 6rem 0 9rem 0;
+        padding: 4rem 0 6rem 0;
     }
 }
 
