@@ -429,6 +429,21 @@ h6,
 }
 
 
+/* Ensure feature cards in the "Why Choose Us" section align to equal height */
+.why-choose-row > [class*="col-"] {
+    display: flex;
+}
+
+.why-choose-row .feature-item {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
 /*** Project Portfolio ***/
 #portfolio-flters li {
     display: inline-block;
