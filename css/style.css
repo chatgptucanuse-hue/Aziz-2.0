@@ -6,6 +6,16 @@
     --dark: #2c3e50;
 }
 
+/*** Global Background ***/
+body {
+    background-image: url("../img/site-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f4fff7;
+}
+
 
 /*** Spinner ***/
 #spinner {
