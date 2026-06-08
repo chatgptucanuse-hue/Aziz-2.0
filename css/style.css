@@ -238,6 +238,23 @@ h6,
     }
 }
 
+/* Homepage: force hero text to black for better contrast */
+.home .hero-header {
+    color: #000 !important;
+}
+
+.home .hero-header h1,
+.home .hero-header h2,
+.home .hero-header p,
+.home .hero-header .breadcrumb,
+.home .hero-header .section-title {
+    color: #000 !important;
+}
+
+.home .hero-header .btn {
+    color: #000 !important;
+}
+
 
 /*** Section Title ***/
 .section-title {
