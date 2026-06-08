@@ -641,18 +641,3 @@ h6,
 .footer .footer-menu a:hover {
     color: var(--secondary);
 }
-
-/* Replace green background color with site background image */
-.bg-primary {
-    background-color: transparent !important;
-}
-
-/* Ensure footer and hero text remain readable over the background image */
-.footer, .hero-header, .container-xxl.bg-primary {
-    color: #ffffff;
-}
-
-/* Preserve sticky navbar opaque background when scrolled */
-.sticky-top.navbar-light {
-    background: #FFFFFF;
-}
