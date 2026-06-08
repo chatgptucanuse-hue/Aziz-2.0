@@ -216,6 +216,12 @@ h6,
         background: var(--secondary);
     }
 }
+    /* Navbar: force link and brand color to black */
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-brand,
+    .navbar-light .navbar-toggler {
+        color: #000 !important;
+    }
 
 
 /*** Hero Header ***/
@@ -249,6 +255,7 @@ h6,
 .home .hero-header .breadcrumb,
 .home .hero-header .section-title {
     color: #000 !important;
+    font-weight: 700 !important;
 }
 
 .home .hero-header .btn {
