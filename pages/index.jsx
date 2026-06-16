@@ -11,8 +11,8 @@ export default function Home() {
   const business = {
     name: 'Thaza Digital Services',
     logo: 'https://example.com/img/logo.png',
-    telephone: '+91995266673',
-    email: 'chatgptucanuse@gmail.com',
+    telephone: '+919952666673',
+    email: 'hello@thazadigital.com',
     address: { streetAddress: 'KK Nagar', addressLocality: 'Chennai', addressRegion: 'TN', postalCode: '600078', addressCountry: 'IN' },
     geo: { latitude: 13.0100, longitude: 80.2090 },
     openingHoursSpecification: [

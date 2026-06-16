@@ -9,8 +9,8 @@ export default function HomepageExample() {
   const business = {
     name: 'Thaza Digital Services',
     logo: 'https://example.com/img/logo.png',
-    telephone: '+91995266673',
-    email: 'chatgptucanuse@gmail.com',
+    telephone: '+919952666673',
+    email: 'hello@thazadigital.com',
     address: {
       streetAddress: 'KK Nagar',
       addressLocality: 'Chennai',

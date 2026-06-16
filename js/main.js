@@ -85,3 +85,19 @@
     
 })(jQuery);
 
+// Sticky Call & WhatsApp buttons (injected for conversions)
+(function(){
+    function createStickyButtons(){
+        if(document.getElementById('thaza-sticky-cta')) return;
+        var container = document.createElement('div');
+        container.id = 'thaza-sticky-cta';
+        container.style.position = 'fixed';
+        container.style.right = '16px';
+        container.style.bottom = '16px';
+        container.style.zIndex = '9999';
+        container.innerHTML = '\n+            <a href="tel:+919952666673" class="btn btn-success d-inline-flex align-items-center mb-2" style="border-radius:50px;padding:12px 16px;box-shadow:0 6px 18px rgba(0,0,0,.12);">\n+                <i class="fa fa-phone me-2"></i> Call\n+            </a>\n+            <a href="https://wa.me/919952666673" target="_blank" rel="noopener" class="btn btn-success d-inline-flex align-items-center" style="border-radius:50px;padding:12px 16px;box-shadow:0 6px 18px rgba(0,0,0,.12);background:#25D366;border-color:#25D366;">\n+                <i class="fab fa-whatsapp me-2"></i> WhatsApp\n+            </a>';
+        document.body.appendChild(container);
+    }
+    if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', createStickyButtons); else createStickyButtons();
+})();
+
